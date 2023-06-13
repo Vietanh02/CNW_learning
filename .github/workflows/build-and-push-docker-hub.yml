@@ -33,7 +33,7 @@ jobs:
           push: true
           tags: vietanh02/cicd_01:demo
 
-
+#new
   pull-and-up:
     name: Pull new image and re run with the new version
     runs-on: ubuntu-latest
