@@ -25,13 +25,13 @@ jobs:
           #account to login to docker
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build and push
-        uses: vietanh02/cicd_01:demo
+        uses: docker/build-push-action@v2
         with:
           context: .
-          #name of file
+          #name of
           file: ./Dockerfile
           push: true
-          tags: bsignbkc/express-sample-project:staging
+          tags: vietanh02/cicd_01:demo
 
 
   pull-and-up:
